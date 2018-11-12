@@ -18,12 +18,6 @@ body {
 
   }
 
-  @include breakpoint(medium) {
-
-		font-size: 1.25em;
-
-  }
-
 }
 
 ::selection {

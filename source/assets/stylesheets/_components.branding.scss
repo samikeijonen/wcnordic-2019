@@ -25,6 +25,8 @@
 
 .site-header .site-branding {
 
+  background: url("https://2019.nordic.wordcamp.org/files/2018/10/bg.jpg") no-repeat;
+  background-size: cover;
   position: relative; // Add position: relative to keep the light beams from leaking out
   overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
@@ -47,20 +49,19 @@
   font-size: ms(2);
   line-height: 1;
   font-family: $font-headline;
-  font-weight: $bold;
-  text-transform: uppercase;
-  color: $color-text-strong-invert;
+  font-weight: $regular;
+  color: $color-white;
 
   a {
 
     display: block;
-    color: $color-link-alt;
+    color: $color-white;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-link-alt-hover;
+      color: $color-white;
       text-decoration: none;
 
     }

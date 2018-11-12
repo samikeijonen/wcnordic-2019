@@ -188,6 +188,17 @@
 //		<dd class="cc__variable">$color-input-radio-active</dd>
 //	</dl>
 // </div>
+// <h3 class="cc-title">Buttons</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-button-regular">
+//		<dt class="cc__title">Regular button</dt>
+//		<dd class="cc__variable">$color-button-regular</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-button-primary">
+//		<dt class="cc__title">Primary button</dt>
+//		<dd class="cc__variable">$color-button-primary</dd>
+//	</dl>
+// </div>
 //
 // Style guide: 1.colors
 
@@ -214,11 +225,11 @@
 
 /* Brand */
 
-$color-brand-primary:             #5566C3; // Blue
+$color-brand-primary:             #6cbcbd; // Blue
 $color-brand-secondary:           #F95758; // Red
 $color-brand-tertiary:            #EFDC39; // Yellow
-$color-brand-quaternary:          #282409; // Black
-// $color-brand-quinary:             #fff; //
+$color-brand-quaternary:          #4a4a4a; // Black
+$color-white:                     #fff;
 
 @include cc($color-brand-primary, 'color-brand-primary');
 @include cc($color-brand-secondary, 'color-brand-secondary');
@@ -231,12 +242,12 @@ $color-brand-quaternary:          #282409; // Black
  * Text
  */
 
-$color-text:                      rgba(0,0,0,.75);
-$color-text-weak:                 rgba(0,0,0,.6);
-$color-text-strong:               rgba(0,0,0,.9);
-$color-text-invert:               rgba(255,255,255,.75);
-$color-text-weak-invert:          rgba(255,255,255,.6);
-$color-text-strong-invert:        rgba(255,255,255,.9);
+$color-text:                      $color-brand-quaternary;
+$color-text-weak:                 rgba(0,0,0,0.5);
+$color-text-strong:               rgba(0,0,0,0.9);
+$color-text-invert:               rgba(255,255,255,0.75);
+$color-text-weak-invert:          rgba(255,255,255,0.6);
+$color-text-strong-invert:        rgba(255,255,255,0.9);
 
 @include cc($color-text, 'color-text');
 @include cc($color-text-weak, 'color-text-weak');
@@ -250,10 +261,10 @@ $color-text-strong-invert:        rgba(255,255,255,.9);
  * Links
  */
 
-$color-link:                 $color-brand-primary;
+$color-link:                 $color-brand-quaternary;
 $color-link-hover:           darken($color-link, 20%);
 $color-link-focus:           darken($color-link, 20%);
-$color-link-visited:         tint($color-link, 20%);
+$color-link-visited:         $color-brand-quaternary;
 
 @include cc($color-link, 'color-link');
 @include cc($color-link-focus, 'color-link-focus');
@@ -360,8 +371,8 @@ $color-input-radio-active:        $color-brand-primary;
  * Buttons
  */
 
-$color-button-regular:            $color-grey-10;
-$color-button-regular-hover:      $color-grey-20;
+$color-button-regular:            $color-brand-quaternary;
+$color-button-regular-hover:      $color-grey-90;
 $color-button-primary:            $color-brand-primary;
 $color-button-primary-hover:      shade($color-button-primary, 10%);
 $color-button-secondary:          $color-brand-secondary;
@@ -369,6 +380,11 @@ $color-button-secondary-hover:    shade($color-button-secondary, 10%);
 $color-button-invert:             #fff;
 $color-button-invert-hover:       mix($color-button-invert, #000, 90%);
 $color-button-inactive:           #eeeeee;
+
+@include cc($color-button-regular, 'color-button-regular');
+@include cc($color-button-regular-hover, 'color-button-regular-hover');
+@include cc($color-button-primary, 'color-button-primary');
+@include cc($color-button-primary-hover, 'color-button-primary-hover');
 
 
 /*

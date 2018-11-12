@@ -30,4 +30,8 @@ a {
 
   }
 
+  &:focus {
+    outline: 1px solid dotted;
+  }
+
 }
