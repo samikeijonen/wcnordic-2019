@@ -1,6 +1,6 @@
-# WordCamp Europe 2018
+# WordCamp Nordic 2019
 
-Style guide for the WordCamp Europe 2018 theme
+Style guide for the WordCamp Nordic 2019 theme
 
 ## Style guide
 

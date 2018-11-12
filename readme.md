@@ -1,4 +1,4 @@
-# WordCamp Europe 2018 Style Guide
+# WordCamp Nordic 2019 Style Guide
 
 Read [the article about the style guide](https://samikeijonen.github.io/wcnordic-2019/styleguide/) on WordCamp Europe blog. See the current version of the generated [style guide](https://lucijanblagonic.github.io/wceu-2018/styleguide/).
 
