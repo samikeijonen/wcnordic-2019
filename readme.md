@@ -1,6 +1,6 @@
 # WordCamp Europe 2018 Style Guide
 
-Read [the article about the style guide](https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/) on WordCamp Europe blog. See the current version of the generated [style guide](https://lucijanblagonic.github.io/wceu-2018/styleguide/).
+Read [the article about the style guide](https://samikeijonen.github.io/wcnordic-2019/styleguide/) on WordCamp Europe blog. See the current version of the generated [style guide](https://lucijanblagonic.github.io/wceu-2018/styleguide/).
 
 ![Style guide created with KSS methodology](screenshot-style-guide.png)
 ![Style guide created with KSS methodology: Color panel](screenshot-style-guide-colors.png)
