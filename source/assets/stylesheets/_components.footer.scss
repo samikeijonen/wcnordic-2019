@@ -38,16 +38,13 @@
   font-size: ms(-1);
 
   max-width: $container-max-width;
+  margin-bottom: $unit-s;
   margin-left: auto;
   margin-right: auto;
 
   & a {
     text-decoration: none;
   }
-}
-
-.site-info-generator {
-  margin-bottom: $unit-xs;
 }
 
 .site-info-network {
