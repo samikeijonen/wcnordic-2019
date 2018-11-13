@@ -20,24 +20,6 @@
 
   #content-widgets .widget {
 
-    // border-top: 1px solid $color-border-weak;
-
-    &:before {
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: rem(24);
-      transform: translateY(-50%);
-
-      background: $image-divider repeat-x 50% 50%;
-      background-color: transparent!important;
-
-      content: "";
-
-    }
-
     background: none!important;
 
     &:first-child {
