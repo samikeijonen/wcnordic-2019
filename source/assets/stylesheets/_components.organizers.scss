@@ -37,6 +37,10 @@
   max-width: 40em;
   margin-bottom: $unit-l;
 
+  @supports (grid-area: auto) {
+    margin-bottom: 0;
+  }
+
   &:last-child {
 
     margin-bottom: 0;
