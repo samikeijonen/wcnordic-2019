@@ -18,10 +18,10 @@
 
     display: grid;
     grid-gap: $unit-l;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     @include breakpoint(medium) {
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
   }
