@@ -25,11 +25,14 @@
   &:before {
 
     display: block;
-    height: rem(80);
+    height: rem(4);
 
-    background: $image-divider no-repeat 50% 50%;
+    background-color: $color-grey-20; 
 
     content: "";
+
+    margin-bottom: $unit-xl;
+    margin-top: $unit-xl;
 
   }
 
@@ -47,7 +50,7 @@
 
   .wcpt-session-meta {
 
-    font-weight: $bold;
+    font-weight: $medium;
 
   }
 

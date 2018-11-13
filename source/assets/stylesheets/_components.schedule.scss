@@ -87,12 +87,14 @@
   a {
 
     box-shadow: none;
+    text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
 
       box-shadow: none;
+      text-decoration: underline;
 
     }
 
@@ -119,6 +121,8 @@
     border-top: none;
     background-color: $color-brand-quaternary;
     color: $color-text-strong-invert;
+    font-size: rem(14);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 
   }
@@ -214,7 +218,6 @@
 
     font-size: ms(1);
     line-height: ms(1);
-    font-weight: $bold;
 
   }
 
@@ -549,6 +552,7 @@ $session-type-color-business:    #575357; // Ash
 
     font-size: ms(-1);
     line-height: ms(1);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: $bold;
     color: $color-text-strong;
