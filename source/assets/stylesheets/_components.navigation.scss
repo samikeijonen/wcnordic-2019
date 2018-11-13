@@ -143,6 +143,10 @@
 
 }
 
+.main-navigation {
+  display: none;
+}
+
 .menu {
 
   @include list-reset();
