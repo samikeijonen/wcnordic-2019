@@ -64,6 +64,27 @@
  * on the position of the widget.
  */
 
+@supports (grid-area: auto) {
+  .home .content-widgets-block {
+    display: grid;
+    grid-gap: ($container-unit-small * 2);
+    grid-template-areas: "a a"
+                         "b b";
+
+    & .widget:first-child {
+      grid-area: a;
+    }
+
+    & .widget:nth-child(2) {
+      grid-area: a;
+    }
+  }
+
+  @include breakpoint(medium) {
+    grid-template-areas: "a a b";
+  }
+}
+
 
 .widget {
 
