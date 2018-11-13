@@ -78,10 +78,10 @@
     & .widget:nth-child(2) {
       grid-area: b;
     }
-  }
 
-  @include breakpoint(medium) {
-    grid-template-areas: "a a b";
+    @include breakpoint(medium) {
+      grid-template-areas: "a a b";
+    }
   }
 }
 
