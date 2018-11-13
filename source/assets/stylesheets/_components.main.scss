@@ -173,19 +173,16 @@
 
 #content-widgets {
 
-  margin-top: 0 - ($container-unit-small * 1.5);
   margin-bottom: $container-unit-small * 1.5;
 
   @include breakpoint(medium) {
 
-    margin-top: 0 - ($container-unit-medium * 1.5);
     margin-bottom: $container-unit-medium * 1.5;
 
   }
 
   @include breakpoint(large) {
 
-    margin-top: 0 - ($container-unit-large * 1.5);
     margin-bottom: $container-unit-large * 1.5;
 
   }
