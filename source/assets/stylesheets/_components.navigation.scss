@@ -108,7 +108,8 @@
 
 // .menu-main-navigation-container {}
 
-.main-navigation {
+.main-navigation,
+.secondary-navigation {
 
   position: relative;
 
@@ -126,9 +127,7 @@
 
   // }
 
-  // background-color: $color-brand-tertiary;
-  background-color: $color-brand-quaternary;
-  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.3));
+  background-color: transparent;
 
   @include breakpoint(to-small) {
 
@@ -180,9 +179,9 @@
   margin: 0;
   display: block;
 
-  font-family: $font-headline;
-  font-size: ms(0);
-  font-weight: $bold;
+  @include font-size(14);
+  font-weight: $light;
+  letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
 
@@ -191,7 +190,6 @@
     margin: 0 rem(1);
     display: inline-block;
 
-    @include font-size(18);
     line-height: em(24,18);
     text-align: center;
 
@@ -220,13 +218,7 @@
 
   @include breakpoint(medium) {
 
-    padding: $unit-s $unit-m;
-
-  }
-
-  @include breakpoint(large) {
-
-    padding: $unit-m $unit-m;
+    padding: $unit-s;
 
   }
 
@@ -270,7 +262,7 @@
 
         vertical-align: middle;
 
-        border-top-color: $color-brand-tertiary;
+        border-top-color: $color-white;
         // border-top-color: $color-brand-primary;
 
         content: "";

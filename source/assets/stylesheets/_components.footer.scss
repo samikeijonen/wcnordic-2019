@@ -16,21 +16,34 @@
  * <footer id="colophon" class="site-footer" role="contentinfo"> ... </footer>
  */
 
-#colophon {
+.site-footer {
+
+  background-color: $color-brand-quaternary;
+  color: $color-white;
+
+  margin-top: $unit-xl;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  text-align: center;
+
+  & a {
+    color: $color-white;
+  }
+
+}
+
+
+.site-info {
+  font-size: ms(-1);
 
   max-width: $container-max-width;
   margin-left: auto;
   margin-right: auto;
-  margin-top: $unit-xl;
 
-  text-align: center;
-
-}
-
-.site-info-generator {
-
-  @include visually-hidden();
-
+  & a {
+    text-decoration: none;
+  }
 }
 
 .site-info-network {

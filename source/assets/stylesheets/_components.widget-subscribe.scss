@@ -13,17 +13,12 @@
 
   text-align: center;
 
-  &:before {
-
-    background: $color-brand-quaternary $site-hero-path-pattern repeat 50% 50%;
-    background-size: 300px 300px;
-    background-attachment: fixed;
-
-  }
-
   .widget-title {
 
-    color: $color-brand-secondary;
+    color: $color-white;
+    font-size: ms(3);
+    font-weight: $regular;
+    margin-bottom: $unit-xxl;
   }
 
   p {
@@ -35,12 +30,14 @@
 
   input[type="email"] {
 
+    min-height: $unit-xl;
     width: 100%!important; // Override jetpack CSS
 
   }
 
   input[type="submit"] {
 
+    min-height: $unit-xl;
     width: 100%;
     color: $color-text-strong-invert;
     text-transform: uppercase;
@@ -58,7 +55,7 @@
   }
 
   #subscribe-text {
-
+    @include visually-hidden();
     margin-bottom: $unit-m;
 
   }
@@ -67,23 +64,26 @@
   #subscribe-submit {
 
     display: inline-block;
-    width: rem(200);
-    margin: rem(4);
+    margin: 0;
     vertical-align: top;
 
   }
 
   #subscribe-email {
-
-    @include breakpoint(small) {
-
-      width: rem(400);
-
-    }
-
+    margin-bottom: $unit-xs;
   }
 
-  #subscribe-submit {
+  @include breakpoint(small) {
+
+    #subscribe-email {
+      margin-bottom: 0;
+      margin-right: 2%;
+      width: 75%;
+    }
+
+    #subscribe-submit {
+      width: 22%;
+    }
 
   }
 
