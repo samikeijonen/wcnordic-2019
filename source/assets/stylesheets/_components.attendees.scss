@@ -84,7 +84,6 @@
     margin: 0;
     width: rem(48);
     height: rem(48);
-    border: rem(2) solid $color-brand-primary;
 
     background-color: #fff;
 
@@ -128,12 +127,6 @@
 
   }
 
-  li:hover .avatar {
-
-    transform: scale(1.1);
-
-  }
-
   .tix-first {}
   .tix-last {}
 
@@ -141,34 +134,6 @@
 
     @include ellipsis();
     max-width: rem(180);
-
-  }
-
-  .tix-attendee-twitter {
-
-    &:after {
-
-      display: inline-block;
-
-      width: rem(14);
-      height: rem(14);
-      margin-left: rem(8);
-      vertical-align: middle;
-
-      // background: no-repeat $image-bullet-dark 100% 50%;
-      // background-size: 14px;
-
-      opacity: .5;
-
-      content: "";
-
-    }
-
-    &:last-child:after {
-
-      display: none;
-
-    }
 
   }
 
