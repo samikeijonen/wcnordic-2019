@@ -73,6 +73,10 @@
 
     & .widget:first-child {
       grid-area: a;
+
+      & .widget-title {
+        font-weight: $medium;
+      }
     }
 
     & .widget:nth-child(2) {
@@ -81,6 +85,10 @@
 
     @include breakpoint(medium) {
       grid-template-areas: "a a b";
+
+      & .widget:first-child .widget-title {
+        font-size: rem(64);
+      }
     }
   }
 }
