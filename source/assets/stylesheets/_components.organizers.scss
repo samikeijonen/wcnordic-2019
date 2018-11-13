@@ -9,8 +9,14 @@
 //
 // Style guide: 6.organizers
 
-.page-slug-organizers .type-page {
-  max-width: rem(1400);
+.page-slug-organizers {
+  & .type-page {
+    max-width: rem(1400);
+  }
+
+  & .entry-title {
+    text-align: center;
+  }
 }
 
 .wcorg-organizers {
