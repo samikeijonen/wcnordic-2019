@@ -62,7 +62,7 @@
     position: relative;
 
     margin-top: 0;
-    margin-bottom: $unit-default;
+    margin-bottom: $unit-l;
     height: auto; // Override
     min-height: rem(48); // Image size
     padding-left: rem(64);
@@ -118,10 +118,7 @@
     margin-right: 0;
     margin-bottom: rem(2);
 
-    color: $color-text-strong;
-    font-weight: $bold;
-    font-size: ms(0, 18px);
-    line-height: ms(1);
+    font-weight: $medium;
 
     background: none;
 
