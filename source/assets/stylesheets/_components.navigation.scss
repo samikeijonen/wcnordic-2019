@@ -214,6 +214,10 @@
 
   }
 
+  @include breakpoint(to-small) {
+    color: $color-text-strong-invert;
+  }
+
 }
 
 .current-menu-item > a {
