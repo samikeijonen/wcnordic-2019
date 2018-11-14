@@ -198,15 +198,6 @@
     color: $color-text-strong-invert;
   }
 
-  &:hover,
-  &:active,
-  &:focus,
-  &.focus {
-
-    color: $color-text-strong-invert;
-
-  }
-
   @include breakpoint(medium) {
 
     border-bottom: 1px solid transparent;
