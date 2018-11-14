@@ -13,7 +13,11 @@
 
   position: relative;
 
-  background-color: $site-hero-background;
+  .home & {
+    background-color: $site-hero-background;
+    background: $site-hero-path-small no-repeat;
+    background-size: cover;
+  }
 
   // background-repeat: repeat-x;
   // background-position: 50% 0;
@@ -60,78 +64,9 @@
 }
 
 .custom-header {
+  display: none;
 
-  background: $site-hero-background $site-hero-path-small repeat-x 50% 100%;
-  background-size: cover;
-
-  // Add gradient
-  &:before {
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-
-    background-image: linear-gradient(to top, rgba($site-hero-background, .5), rgba(0,0,0,0));
-
-    content: "";
-
-    // Hide on homepage
-    .home & {
-
-      display: none;
-
-    }
-
+  .home & {
+    display: block;
   }
-
-  @include breakpoint(large) {
-
-    background-image: $site-hero-path-large;
-
-  }
-
-//   background-repeat: no-repeat;
-//   background-position: 50% 0;
-//   background-image: $site-hero-path-wide-temp;
-//   background-color: $site-hero-background;
-
-//   @include breakpoint(medium) {
-
-//     background-size: cover;
-//     background-image: $site-hero-path-wide-temp;
-//     background-position: 50% 100%;
-
-//   }
-
-//   @media (min-width: 1800px) {
-
-//     background-image: $site-hero-path-wide-temp;
-
-//   }
-
 }
-
-// .wp-custom-header {
-
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-
-//   img {
-
-//     max-width: none;
-
-//     position: absolute;
-//     bottom: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     height: 100%;
-//     min-width: 100vw;
-
-//   }
-
-// }

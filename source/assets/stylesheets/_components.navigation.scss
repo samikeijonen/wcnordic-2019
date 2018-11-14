@@ -112,22 +112,8 @@
 .secondary-navigation {
 
   position: relative;
-
-  // &:before {
-
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-
-  //   height: rem(2);
-  //   background-color: $color-link;
-
-  //   content: "";
-
-  // }
-
   background-color: transparent;
+  z-index: 202;
 
   @include breakpoint(to-small) {
 
@@ -184,7 +170,6 @@
   display: block;
 
   @include font-size(14);
-  font-weight: $light;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
@@ -204,11 +189,14 @@
 .menu-item a {
 
   display: block;
-  color: $color-text-strong-invert;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
   transition: all .1s ease;
+
+  .home & {
+    color: $color-text-strong-invert;
+  }
 
   &:hover,
   &:active,
@@ -216,7 +204,7 @@
   &.focus {
 
     color: $color-text-strong-invert;
-    background-color: $color-brand-primary;
+    background-color: $color-brand-quaternary;
 
   }
 
