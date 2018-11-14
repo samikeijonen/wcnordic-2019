@@ -72,13 +72,9 @@
 }
 
 .entry-meta {
-
+  @include smallcaps;
   margin-bottom: $unit-s;
-
-  font-size: ms(-2);
-  line-height: ms(2);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-size: rem(12);
 
   a {
 
@@ -109,14 +105,9 @@
 }
 
 .entry-footer {
-
-  // margin-bottom: $unit-default;
+  @include smallcaps;
+  font-size: rem(12);
   margin-bottom: 0;
-
-  font-size: ms(-2);
-  line-height: ms(2);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 
   > :after {
 

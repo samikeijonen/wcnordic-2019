@@ -33,6 +33,8 @@
   #session-speaker-names {
 
     @include list-reset();
+    @include smallcaps();
+    font-weight: $medium;
 
   }
 

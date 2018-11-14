@@ -88,10 +88,8 @@ img.wp-smiley, img.emoji {
 
 .smallcaps,
 .more-link {
-  font-size: rem(12);
+  @include smallcaps;
   font-weight: $medium;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 
   & a {
     text-decoration: none;
@@ -104,8 +102,11 @@ img.wp-smiley, img.emoji {
   }
 }
 
+.smallcaps {
+  font-size: rem(12);
+}
+
 .more-link {
-  font-size: rem(14);
   text-decoration: none;
 
   &:hover,

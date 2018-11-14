@@ -16,12 +16,6 @@
 
 .wcorg-session {
 
-  h2 {
-
-    margin-bottom: 0;
-
-  }
-
   &:before {
 
     display: block;
@@ -49,7 +43,7 @@
   }
 
   .wcpt-session-meta {
-
+    @include smallcaps();
     font-weight: $medium;
 
   }

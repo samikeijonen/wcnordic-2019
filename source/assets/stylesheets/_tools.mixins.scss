@@ -173,6 +173,22 @@
 }
 
 
+// Small caps
+//
+// Uniform normal transition
+//
+// Markup:
+// @include smallcaps;
+//
+// Style guide: 2.smallcaps
+
+@mixin smallcaps {
+  font-size: rem(14);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
 // Container padding
 //
 // Add container padding accross resolutions with the ability to set multiplicator for top and bottom padding.

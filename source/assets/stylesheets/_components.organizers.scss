@@ -28,7 +28,7 @@
   @supports (grid-area: auto) {
 
     display: grid;
-    grid-gap: $unit-l;
+    grid-gap: $unit-xl;
     grid-template-columns: 1fr 1fr;
 
     @include breakpoint(medium) {
