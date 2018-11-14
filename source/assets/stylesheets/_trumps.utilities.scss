@@ -85,3 +85,32 @@ img.wp-smiley, img.emoji {
   }
 
 }
+
+.smallcaps,
+.more-link {
+  font-size: rem(12);
+  font-weight: $medium;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  & a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.more-link {
+  font-size: rem(14);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }  
+}
