@@ -71,6 +71,10 @@
     grid-template-areas: "a a"
                          "b b";
 
+    & .widget {
+      padding-bottom: 0;
+    }
+
     & .widget:first-child {
       grid-area: a;
 
