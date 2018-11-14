@@ -204,13 +204,23 @@
   &.focus {
 
     color: $color-text-strong-invert;
-    background-color: $color-brand-quaternary;
 
   }
 
   @include breakpoint(medium) {
 
-    padding: $unit-s;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.focus {
+  
+      border-bottom: 1px solid;
+  
+    }
+
+    padding: $unit-m $unit-s $unit-xs;
 
   }
 
@@ -222,8 +232,7 @@
 
 .current-menu-item > a {
 
-  color: $color-text-strong-invert;
-  background-color: $color-link;
+  border-bottom: 1px solid;
 
 }
 
