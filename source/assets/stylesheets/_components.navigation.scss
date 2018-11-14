@@ -184,6 +184,11 @@
 
   }
 
+  @include breakpoint(medium) {
+    padding-left: $unit-s;
+    padding-right: $unit-s;
+  }
+
 }
 
 .menu-item a {
@@ -211,7 +216,7 @@
   
     }
 
-    padding: $unit-m $unit-s $unit-xs;
+    padding: $unit-m 0 $unit-xs;
 
   }
 
