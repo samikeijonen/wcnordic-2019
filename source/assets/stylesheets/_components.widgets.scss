@@ -89,6 +89,10 @@
       grid-area: b;
     }
 
+    & .highlight {
+      max-width: 500px;
+    }
+
     @include breakpoint(medium) {
       grid-template-areas: "a a b";
     }
@@ -104,6 +108,7 @@
       background-image: url("https://2019.nordic.wordcamp.org/files/2018/11/bg-wcnordic.png");
       background-size: cover;
       background-repeat: no-repeat;
+      max-width: 500px;
       padding-bottom: 0;
     }
 
