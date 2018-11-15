@@ -129,6 +129,7 @@
   & .widget-title {
     font-size: rem(40);
     font-weight: $black;
+    margin-bottom: $unit-l;
 
     @include breakpoint(medium) {
       font-size: rem(48);
