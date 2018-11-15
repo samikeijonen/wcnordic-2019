@@ -97,6 +97,7 @@
   .home #content-widget-2 {
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(20rem, 1fr) );
+    margin-top: $unit-xl;
 
     & .widget {
       background-color: $color-brand-quaternary;
