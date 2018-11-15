@@ -115,3 +115,12 @@ img.wp-smiley, img.emoji {
     text-decoration: underline;
   }  
 }
+
+.font-size-cta {
+  font-size: rem(44);
+  font-weight: $medium;
+
+  @include breakpoint(medium) {
+      font-size: rem(64);
+  }
+}
