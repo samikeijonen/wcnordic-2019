@@ -118,7 +118,7 @@ img.wp-smiley, img.emoji {
 
 .font-size-cta {
   font-size: rem(44);
-  font-weight: $medium;
+  font-weight: $regular;
 
   @include breakpoint(medium) {
       font-size: rem(64);

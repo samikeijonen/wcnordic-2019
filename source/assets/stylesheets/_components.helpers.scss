@@ -94,6 +94,52 @@
 
 }
 
+// Callout with background
+//
+// Block of content with background image and CTA
+//
+// Markup:
+// <div class="callout">
+//   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laudantium maiores nobis voluptatibus commodi, aspernatur animi optio dicta ullam hic, nisi, assumenda facere tenetur explicabo architecto repellendus, minima. Aut, eligendi.</p>
+// </div>
+//
+// Style guide: 6.helpers.callout
+
+.callout {
+  display: flex;
+  flex-direction: column;
+  min-height: 24rem;
+
+  padding: $unit-xl $unit-l $unit-l;
+  margin-bottom: $unit-default;
+  border: rem(1) solid transparent;
+
+  background-color: $color-brand-quaternary;
+  color: $color-white;
+
+  text-align: center;
+
+  & p,
+  & h2,
+  & h3,
+  & .widget-title {
+    color: inherit;
+  }
+
+  & .widget-title {
+    font-size: rem(40);
+  }
+
+  & p:last-child {
+    margin-bottom: $unit-xxl;
+  }
+
+  & .button {
+    margin-top: auto;
+  }
+
+}
+
 // Grid
 //
 // Converts children to a grid layout. Use modifiers `grid-two`, `grid-three` or `grid-four` to create a column layout.

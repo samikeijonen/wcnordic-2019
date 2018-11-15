@@ -65,7 +65,7 @@
  */
 
 @supports (grid-area: auto) {
-  .home .content-widgets-block {
+  .home #content-widget-1 {
     display: grid;
     grid-gap: ($container-unit-small * 2);
     grid-template-areas: "a a"
@@ -85,6 +85,32 @@
 
     @include breakpoint(medium) {
       grid-template-areas: "a a b";
+    }
+  }
+
+  .home #content-widget-2 {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(20rem, 1fr) );
+
+    & .widget {
+      background-color: $color-brand-quaternary;
+      background-image: url("https://2019.nordic.wordcamp.org/files/2018/11/bg-wcnordic.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 0;
+    }
+
+    & .widget:nth-of-type(2) {
+      background-image: url("https://2019.nordic.wordcamp.org/files/2018/11/bg-wcnordic-1.png");
+    }
+
+    & .widget:nth-of-type(3) {
+      background-image: url("https://2019.nordic.wordcamp.org/files/2018/11/bg-wcnordic-2.png");
+    }
+
+    & .callout {
+      background-color: transparent;
+      margin-bottom: 0;
     }
   }
 }
