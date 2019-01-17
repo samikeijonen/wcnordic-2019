@@ -410,8 +410,13 @@
 
     .menu-item {
 
-      padding-left: $unit-s;
-      padding-right: $unit-s;
+      padding-left: 0;
+      padding-right: 0;
+
+      a {
+        padding-left: 1.0625rem;
+        padding-right: 1.0625rem;
+      }
 
     }
 
