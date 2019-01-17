@@ -10,9 +10,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    text-align: center;
-
   }
 
   > div h2 {
@@ -79,13 +76,6 @@
     display: block;
     margin: 0 auto;
     max-height: rem(140);
-
-  }
-
-  h3,
-  .wcorg-sponsor-description p {
-
-    display: none;
 
   }
 
