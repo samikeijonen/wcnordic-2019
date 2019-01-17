@@ -69,7 +69,8 @@
 .wcorg-sponsor {
 
   margin-bottom: 0;
-  padding: $unit-xs;
+  padding-bottom: $unit-s;
+  padding-top: $unit-s;
 
   img {
     display: block;
@@ -98,8 +99,6 @@
   }
 
   @include breakpoint(medium) {
-
-    padding: $unit-s;
 
     img {
 
