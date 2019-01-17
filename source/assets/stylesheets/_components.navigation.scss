@@ -283,7 +283,9 @@
     &:hover > a,
     &.focus > a {
 
-      color: $color-text-strong-invert;
+      .home & {
+        color: $color-text-strong-invert;
+      }
 
       &:after {
 
@@ -399,6 +401,17 @@
 
       padding-left: $unit-m;
       padding-right: $unit-m;
+
+    }
+
+  }
+
+  @include breakpoint(large) {
+
+    .menu-item {
+
+      padding-left: $unit-s;
+      padding-right: $unit-s;
 
     }
 
