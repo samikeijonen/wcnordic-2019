@@ -284,7 +284,6 @@
     &.focus > a {
 
       color: $color-text-strong-invert;
-      background-color: $color-link;
 
       &:after {
 
@@ -395,17 +394,6 @@
   }
 
   @include breakpoint(medium) {
-
-    a {
-
-      padding-left: $unit-m;
-      padding-right: $unit-m;
-
-    }
-
-  }
-
-  @include breakpoint(large) {
 
     a {
 
