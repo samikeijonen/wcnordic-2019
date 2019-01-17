@@ -71,7 +71,9 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-text-strong-invert;
+    .home & {
+      border-top-color: $color-text-strong-invert;
+    }
 
     content: "";
 
