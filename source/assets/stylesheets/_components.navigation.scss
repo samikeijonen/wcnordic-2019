@@ -71,9 +71,7 @@
 
     vertical-align: middle;
 
-    .home & {
-      border-top-color: $color-text-strong-invert;
-    }
+    border-top-color: $color-text-strong-invert;
 
     content: "";
 
@@ -257,7 +255,7 @@
       &:after {
 
         position: relative;
-        top: -(rem(2));
+        top: 0.015rem;
 
         display: inline-block;
         border: rem(4) solid transparent;
@@ -265,7 +263,11 @@
 
         vertical-align: middle;
 
-        border-top-color: $color-white;
+        border-top-color: $color-link;
+
+        .home & {
+          border-top-color: $color-white;
+        }
         // border-top-color: $color-brand-primary;
 
         content: "";
@@ -417,7 +419,7 @@
 
       a {
         padding-left: 1.0625rem;
-        padding-right: 1.0625rem;
+        padding-right: 1.065rem;
       }
 
     }
